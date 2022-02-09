@@ -1,12 +1,14 @@
 #include <unistd.h>
 
-void only_c(void)
+void ft_putchar(char c)
 {
-    write(1, "c", 1);
+    write(1, &c, 1);
 };
 
-// int main(void)
-// {
-//     only_c();
-//     return (0);
-// }
+int main(void)
+{
+    char a;
+    a = 'c';
+    ft_putchar(a);
+    return (0);
+};
