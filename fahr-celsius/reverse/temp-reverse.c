@@ -9,11 +9,11 @@ int main()
     upper = 300;
     step = 20;
 
-    fahr = lower;
-    while (fahr <= upper)
+    fahr = upper;
+    while (fahr >= lower)
     {
         celsius = (5.0 / 9.0) * (fahr - 32);
         printf("%3.0f %6.1f\n", fahr, celsius); //I'm screwed. =)
-        fahr += step;
+        fahr -= step;
     }
 }
