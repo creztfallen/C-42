@@ -2,6 +2,8 @@
 
 int main()
 {
+
+#define LOWER
     float fahr, celsius;
     int lower, upper, step;
 
